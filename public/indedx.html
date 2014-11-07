@@ -2,16 +2,16 @@
 <html>
   <head>
   <meta charset="utf-8">
-  <title>PMDB for Yuki!</title>
+  <title>URDB!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.0/css/foundation.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.0/js/vendor/modernizr.js"></script>
   <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
 </head>
+</head>
 <body>
-  <img class='heart' src='https://www.openmerchantaccount.com/img/aojgaojg.png'>
   <div class='nav'><div class='search-nav'><input class='input' type='text' id='search' value='Find Movies'><img class='search' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzW9WwjzaiLwNgsXGbD_Py__L8IufmGaVZ2IP_GmRuU-rnkY7j'/>
   </div>
-  <img id='logo' src='https://www.openmerchantaccount.com/img/logoaoeifjao.png'/>
+  <img id='logo' src='http://images.cooltext.com/3941294.png'/>
   <div class='menu'>
   <ul>
     <div class='movie-list'><div>Movie list
@@ -29,7 +29,7 @@
   <div class='side'>
     <h4>Thank you for your support!</h4>
     <div class='donate'>
-    <form action="/" method="get" target="_top">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_donations">
       <input type="hidden" name="business" value="puerile23@gmail.com">
       <input type="hidden" name="lc" value="US">
@@ -41,11 +41,10 @@
       <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
     </form>
     </div>
-    <h3>Special thanks to Yuki!</h3>
   </div>
   </div>
-  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
   <script id="movie-template" type="text/x-handlebars-template">
   <div class="movie-handlerbars">
     <img id={{ id }} src='http://image.tmdb.org/t/p/w500{{poster_path}}'/>
@@ -61,7 +60,7 @@
     <p>Vote Average: {{ vote_average }}/10 ({{ vote_count}} votes)</p>
     <p>Overview: {{ overview }}</p>
     <iframe width="480" height="360"
-    src="https://www.youtube.com/embed/{{ key }}" allowFullScreen>
+    src="http://www.youtube.com/embed/{{ key }}" allowFullScreen>
     </iframe>
   </div>
   </script>
@@ -114,7 +113,7 @@
         $('.main').empty();
         $('.main').append(html);
         if ($('.single-handlerbars').last().find('img').attr('src') === 'http://image.tmdb.org/t/p/w500') {
-          $('.single-handlerbars').last().find('img').attr('src','https://www.openmerchantaccount.com/img/jasdofiajoejaojg.png');
+          $('.single-handlerbars').last().find('img').attr('src','http://www.rubbishworks.com/images/not_available.png');
         }
         $('.single-handlerbars').append('<input class=back type=submit value=back>');
         $('.back').click(function(e){
@@ -133,7 +132,7 @@
       $('.main').empty();
       $('.main').append(html);
       if ($('.single-handlerbars').last().find('img').attr('src') === 'http://image.tmdb.org/t/p/w500') {
-        $('.single-handlerbars').last().find('img').attr('src','https://www.openmerchantaccount.com/img/jasdofiajoejaojg.png');
+        $('.single-handlerbars').last().find('img').attr('src','http://www.rubbishworks.com/images/not_available.png');
       }
       $('.single-handlerbars').append('<input class=back type=submit value=back to list>');
       $('.back').click(function(e){
@@ -153,19 +152,21 @@
         html = template(movies.results[i]);
         $('.main').append('<div class=small-3 columns>'+html+'</div>');
         if ($('.movie-handlerbars').last().find('img').attr('src') === 'http://image.tmdb.org/t/p/w500') {
-          $('.movie-handlerbars').last().find('img').attr('src','https://www.openmerchantaccount.com/img/jasdofiajoejaojg.png');
+          $('.movie-handlerbars').last().find('img').attr('src','http://www.rubbishworks.com/images/not_available.png');
         }
+        //$('.main').append('<input class=show data-show-id='+i+' type=submit value=detail>');
+        //main = $('.main').children();
       };
       $('img','.main').click(function(){
         $_this = $(this);
         showMovie($_this);
       });
       if (num === 1) {
-        $('.main').append('<div class=small-3 columns><img class=next src=https://www.openmerchantaccount.com/img/cooltext1731650583.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=next src=http://images.cooltext.com/3941613.png></div>');
       } else if (num === totalPage) {
-        $('.main').append('<div class=small-3 columns><img class=pre src=https://www.openmerchantaccount.com/img/cooltext1731650795.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=pre src=http://images.cooltext.com/3941618.png></div>');
       } else {
-        $('.main').append('<div class=small-3 columns><img class=next src=https://www.openmerchantaccount.com/img/cooltext1731650583.png><img class=pre src=https://www.openmerchantaccount.com/img/cooltext1731650795.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=next src=http://images.cooltext.com/3941613.png><img class=pre src=http://images.cooltext.com/3941618.png></div>');
       }
       $('.next').click(function(e){
         page++;
@@ -187,7 +188,7 @@
         html = template(movies.results[i]);
         $('.main').append('<div class=small-3 columns>'+html+'</div>');
         if ($('.movie-handlerbars').last().find('img').attr('src') === 'http://image.tmdb.org/t/p/w500') {
-          $('.movie-handlerbars').last().find('img').attr('src','https://www.openmerchantaccount.com/img/jasdofiajoejaojg.png');
+          $('.movie-handlerbars').last().find('img').attr('src','http://www.rubbishworks.com/images/not_available.png');
         }
       };
       $('img','.main').click(function(){
@@ -195,11 +196,11 @@
         showMovie($_this);
       });
       if (num === 1) {
-        $('.main').append('<div class=small-3 columns><img class=next src=https://www.openmerchantaccount.com/img/cooltext1731650583.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=next src=http://images.cooltext.com/3941613.png></div>');
       } else if (num === totalPage) {
-        $('.main').append('<div class=small-3 columns><img class=pre src=https://www.openmerchantaccount.com/img/cooltext1731650795.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=pre src=http://images.cooltext.com/3941618.png></div>');
       } else {
-        $('.main').append('<div class=small-3 columns><img class=next src=https://www.openmerchantaccount.com/img/cooltext1731650583.png><img class=pre src=https://www.openmerchantaccount.com/img/cooltext1731650795.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=next src=http://images.cooltext.com/3941613.png><img class=pre src=http://images.cooltext.com/3941618.png></div>');
       }
       $('.next').click(function(e){
         page++;
@@ -221,7 +222,7 @@
         html = template(movies.results[i]);
         $('.main').append('<div class=small-3 columns>'+html+'</div>');
         if ($('.movie-handlerbars').last().find('img').attr('src') === 'http://image.tmdb.org/t/p/w500') {
-          $('.movie-handlerbars').last().find('img').attr('src','https://www.openmerchantaccount.com/img/jasdofiajoejaojg.png');
+          $('.movie-handlerbars').last().find('img').attr('src','http://www.rubbishworks.com/images/not_available.png');
         }
       };
       $('img','.main').click(function(){
@@ -229,11 +230,11 @@
         showMovie($_this);
       });
       if (num === 1) {
-        $('.main').append('<div class=small-3 columns><img class=next src=https://www.openmerchantaccount.com/img/cooltext1731650583.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=next src=http://images.cooltext.com/3941613.png></div>');
       } else if (num === totalPage) {
-        $('.main').append('<div class=small-3 columns><img class=pre src=https://www.openmerchantaccount.com/img/cooltext1731650795.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=pre src=http://images.cooltext.com/3941618.png></div>');
       } else {
-        $('.main').append('<div class=small-3 columns><img class=next src=https://www.openmerchantaccount.com/img/cooltext1731650583.png><img class=pre src=https://www.openmerchantaccount.com/img/cooltext1731650795.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=next src=http://images.cooltext.com/3941613.png><img class=pre src=http://images.cooltext.com/3941618.png></div>');
       }
       $('.next').click(function(e){
         page++;
@@ -255,7 +256,7 @@
         html = templateOne(movies.results[i]);
         $('.main').append('<div class=small-3 columns>'+html+'</div>');
         if ($('.upcoming-handlerbars').last().find('img').attr('src') === 'http://image.tmdb.org/t/p/w500') {
-          $('.upcoming-handlerbars').last().find('img').attr('src','https://www.openmerchantaccount.com/img/jasdofiajoejaojg.png');
+          $('.upcoming-handlerbars').last().find('img').attr('src','http://www.rubbishworks.com/images/not_available.png');
         }
       };
       $('img','.main').click(function(){
@@ -263,11 +264,11 @@
         showMovie($_this);
       });
       if (num === 1) {
-        $('.main').append('<div class=small-3 columns><img class=next src=https://www.openmerchantaccount.com/img/cooltext1731650583.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=next src=http://images.cooltext.com/3941613.png></div>');
       } else if (num === totalPage) {
-        $('.main').append('<div class=small-3 columns><img class=pre src=https://www.openmerchantaccount.com/img/cooltext1731650795.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=pre src=http://images.cooltext.com/3941618.png></div>');
       } else {
-        $('.main').append('<div class=small-3 columns><img class=next src=https://www.openmerchantaccount.com/img/cooltext1731650583.png><img class=pre src=https://www.openmerchantaccount.com/img/cooltext1731650795.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=next src=http://images.cooltext.com/3941613.png><img class=pre src=http://images.cooltext.com/3941618.png></div>');
       }
       $('.next').click(function(e){
         page++;
@@ -290,7 +291,7 @@
         html = templateThree(actors.results[i]);
         $('.main').append('<div class=small-3 columns>'+html+'</div>');
         if ($('.upcoming-handlerbars').last().find('img').attr('src') === 'http://image.tmdb.org/t/p/w500') {
-          $('.upcoming-handlerbars').last().find('img').attr('src','https://www.openmerchantaccount.com/img/jasdofiajoejaojg.png');
+          $('.upcoming-handlerbars').last().find('img').attr('src','http://www.rubbishworks.com/images/not_available.png');
         }
       };
       $('img','.main').click(function(){
@@ -299,11 +300,11 @@
         showActor($_this);
       });
       if (num === 1) {
-        $('.main').append('<div class=small-3 columns><img class=next src=https://www.openmerchantaccount.com/img/cooltext1731650583.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=next src=http://images.cooltext.com/3941613.png></div>');
       } else if (num === totalPage) {
-        $('.main').append('<div class=small-3 columns><img class=pre src=https://www.openmerchantaccount.com/img/cooltext1731650795.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=pre src=http://images.cooltext.com/3941618.png></div>');
       } else {
-        $('.main').append('<div class=small-3 columns><img class=next src=https://www.openmerchantaccount.com/img/cooltext1731650583.png><img class=pre src=https://www.openmerchantaccount.com/img/cooltext1731650795.png></div>');
+        $('.main').append('<div class=small-3 columns><img class=next src=http://images.cooltext.com/3941613.png><img class=pre src=http://images.cooltext.com/3941618.png></div>');
       }
       $('.next').click(function(e){
         page++;
@@ -325,7 +326,7 @@
         html = template(movies.results[i]);
         $('.main').append('<div class=small-3 columns>'+html+'</div>');
         if ($('.movie-handlerbars').last().find('img').attr('src') === 'http://image.tmdb.org/t/p/w500') {
-          $('.movie-handlerbars').last().find('img').attr('src','https://www.openmerchantaccount.com/img/jasdofiajoejaojg.png');
+          $('.movie-handlerbars').last().find('img').attr('src','http://www.rubbishworks.com/images/not_available.png');
         }
       };
       $('img','.main').click(function(){
@@ -338,9 +339,6 @@
   });
 
   $(document).ready(function(){
-    $('.heart').fadeOut(2000,function(){
-      $('.heart').remove();
-    });
     $('.search').click(function(){
       event.preventDefault();
       $(document).trigger('search');
@@ -419,10 +417,6 @@
   p {
     margin:0px !important;
     font-size:12px;
-  }
-  .heart {
-    height:100%;
-    width:auto;
   }
   .nav {
     width:90%;
@@ -642,9 +636,6 @@
   .side h4 {
     margin:10px 5px 10px 20px;
   }
-  .side h3 {
-    margin:10px 5px 10px 30px;
-  }
   .donate {
     margin:40px 30px 20px 40px;
   }
@@ -653,6 +644,7 @@
     width:auto;
   }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.0/js/vendor/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.0/js/foundation.min.js"></script>
   <script>
     $(document).foundation();
