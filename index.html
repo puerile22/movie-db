@@ -2,13 +2,12 @@
 <html>
   <head>
   <meta charset="utf-8">
-  <title>PMDB for Yuki!</title>
+  <title>PMDB!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.0/css/foundation.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.0/js/vendor/modernizr.js"></script>
   <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
 </head>
 <body>
-  <img class='heart' src='https://www.openmerchantaccount.com/img/aojgaojg.png'>
   <div class='nav'><div class='search-nav'><input class='input' type='text' id='search' value='Find Movies'><img class='search' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzW9WwjzaiLwNgsXGbD_Py__L8IufmGaVZ2IP_GmRuU-rnkY7j'/>
   </div>
   <img id='logo' src='https://www.openmerchantaccount.com/img/logoaoeifjao.png'/>
@@ -338,9 +337,9 @@
   });
 
   $(document).ready(function(){
-    $('.heart').fadeOut(2000,function(){
-      $('.heart').remove();
-    });
+    // $('.heart').fadeOut(2000,function(){
+    //   $('.heart').remove();
+    // });
     $('.search').click(function(){
       event.preventDefault();
       $(document).trigger('search');
