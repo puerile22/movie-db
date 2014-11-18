@@ -1,0 +1,271 @@
+.page {
+  background-color:#e8e8e8;
+}
+.nav {
+  background-color:#e8e8e8;
+}
+.small-3 {
+  float:left;
+  width:25%;
+  height:400px;
+  margin:10px 30px 10px 30px;
+  background-color:#e8e8e8;
+}
+img {
+  height:330px;
+  width:220px;
+}
+h6 {
+  margin:0px !important;
+}
+p {
+  margin:0px !important;
+  font-size:12px;
+}
+.heart {
+  height:100%;
+  width:auto;
+}
+.nav {
+  width:90%;
+  height:100px;
+  margin:0 auto;
+  border:solid;
+  background-color:#434343;
+  border-width:3px;
+}
+.input {
+  width:600px !important;
+  height:30px;
+  font-size:30px;
+  float:left;
+  color:grey;
+}
+.page {
+  width:90%;
+  margin:0 auto;
+  border:solid;
+  border-color:grey;
+  background-color:white;
+  border-width:3px;
+}
+.page:after {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.main {
+  float:left;
+  margin:5px;
+  width:70%;
+  border:solid;
+  border-width:2px;
+  border-color:#EAEAEA;
+  background-color:white;
+}
+.side {
+  float:right;
+  margin-top:5px;
+  margin-right:20px;
+  width:25%;
+  height:100%;
+  border:solid;
+  border-width:2px;
+  border-color:#EAEAEA;
+  background-color:white;
+  position:fixed;
+  right:4.5%;
+}
+.movie-handlerbars {
+  background-color:#e8e8e8;
+}
+.movie-handlerbars:after {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.upcoming-handlerbars {
+  background-color:#e8e8e8;
+}
+.upcoming-handlerbars:after {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.single-handlerbars {
+  background-color:#e8e8e8;
+}
+.single-handlerbars img {
+  height:auto;
+  width:300px;
+  float:left;
+}
+.single-handlerbars iframe{
+  float:right;
+}
+.single-handlerbars:after {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.menu:after {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+
+.menu ul li {
+  color:white;
+}
+.movie-list ul {
+  display:none;
+  background-color:#e8e8e8;
+  list-style-type:none;
+  float:left;
+  margin-left:0px !important;
+  padding:10px;
+  width:200px;
+}
+.movie-list ul div {
+  color:black;
+  padding:5px;
+  font-size:15px;
+}
+.movie-list {
+  float:left;
+  font-size:25px;
+  list-style-type:none;
+}
+.watchlist {
+  float:left;
+  margin-left:80px;
+  font-size:25px;
+  list-style-type:none;
+  color:white;
+}
+.watchlist a {
+  text-decoration:none !important;
+  color:white;
+
+}
+.actor {
+  float:left;
+  font-size:25px;
+  margin-left:120px;
+  list-style-type:none;
+  color:white;
+}
+.actor a {
+  text-decoration:none !important;
+  color:white;
+}
+p:first-child {
+  display:inline-block;
+  margin-left:5px;
+  float:left;
+  width:55%;
+}
+.movie-list {
+  color:white;
+  width:25%;
+  height:30px;
+}
+.movie-list div{
+  float:left;
+}
+.movie-list div ul div {
+  float:none;
+}
+.movie-list:after {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.arrow {
+  display: inline-block;
+  float: left;
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  margin-top:14px;
+  margin-left:5px;
+}
+
+#logo {
+  width:auto;
+  height:100px;
+  float:right;
+  margin-right:50px;
+}
+.search {
+  float:left;
+  width:5.6%;
+  height:auto;
+}
+.search-nav {
+  width:70%;
+  height:40px;
+  display:inline-block;
+}
+.back  {
+  width:100px;
+  margin-right:200px;
+}
+.menu {
+  width:60%;
+  display:inline-block;
+}
+.small-3:last-of-type {
+  background-color:white;
+}
+.pre {
+  display:inline-block;
+  margin-top:350px;
+  float:right;
+  height:auto;
+  width:50px;
+}
+.next {
+  margin-top:350px;
+  display:inline-block;
+  float:right;
+  height:auto;
+  width:50px;
+}
+.side h4 {
+  margin:10px 5px 10px 20px;
+}
+.side h3 {
+  margin:10px 5px 10px 30px;
+}
+.donate {
+  margin:40px 30px 20px 40px;
+}
+.donate input {
+  height:80px;
+  width:auto;
+}
+img.movie:hover {
+  cursor:pointer;
+}
+img.actors:hover {
+  cursor:pointer;
+}
+.back:hover {
+  cursor:pointer;
+}
+.next:hover{
+  cursor: pointer;
+}
+.pre:hover{
+  cursor: pointer;
+}
