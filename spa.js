@@ -23,7 +23,7 @@ var showMovie = function(that) {
       $('.main').empty();
       $('.main').append(html);
       if ($('.single-handlerbars').last().find('img').attr('src') === 'http://image.tmdb.org/t/p/w500') {
-        $('.single-handlerbars').last().find('img').attr('src','jasdofiajoejaojg.png');
+        $('.single-handlerbars').last().find('img').attr('src','https://www.openmerchantaccount.com/img/jasdofiajoejaojg.png');
       }
       $('.single-handlerbars').append('<input class=back type=submit value=back>');
       $('.back').click(function(e){
@@ -42,7 +42,7 @@ var showActor = function(that) {
     $('.main').empty();
     $('.main').append(html);
     if ($('.single-handlerbars').last().find('img').attr('src') === 'http://image.tmdb.org/t/p/w500') {
-      $('.single-handlerbars').last().find('img').attr('src','jasdofiajoejaojg.png');
+      $('.single-handlerbars').last().find('img').attr('src','https://www.openmerchantaccount.com/img/jasdofiajoejaojg.png');
     }
     $('.single-handlerbars').append('<input class=back type=submit value=back to list>');
     $('.back').click(function(e){
@@ -62,7 +62,7 @@ var start = function(num) {
       html = template(movies.results[i]);
       $('.main').append('<div class=small-3 columns>'+html+'</div>');
       if ($('.movie-handlerbars').last().find('img').attr('src') === 'http://image.tmdb.org/t/p/w500') {
-        $('.movie-handlerbars').last().find('img').attr('src','jasdofiajoejaojg.png');
+        $('.movie-handlerbars').last().find('img').attr('src','https://www.openmerchantaccount.com/img/jasdofiajoejaojg.png');
       }
     };
     $('img','.main').click(function(){
@@ -70,11 +70,11 @@ var start = function(num) {
       showMovie($_this);
     });
     if (num === 1) {
-      $('.main').append('<div class=small-3 columns><img class=next src=http://i60.tinypic.com/1z5rm1u.png></div>');
+      $('.main').append('<div class=small-3 columns><img class=next src=cooltext1731650583.png></div>');
     } else if (num === totalPage) {
       $('.main').append('<div class=small-3 columns><img class=pre src=cooltext1731650795.png></div>');
     } else {
-      $('.main').append('<div class=small-3 columns><img class=next src=http://i60.tinypic.com/1z5rm1u.png><img class=pre src=cooltext1731650795.png></div>');
+      $('.main').append('<div class=small-3 columns><img class=next src=cooltext1731650583.png><img class=pre src=cooltext1731650795.png></div>');
     }
     $('.next').click(function(e){
       page++;
@@ -96,7 +96,7 @@ var popMovie = function(num) {
       html = template(movies.results[i]);
       $('.main').append('<div class=small-3 columns>'+html+'</div>');
       if ($('.movie-handlerbars').last().find('img').attr('src') === 'http://image.tmdb.org/t/p/w500') {
-        $('.movie-handlerbars').last().find('img').attr('src','jasdofiajoejaojg.png');
+        $('.movie-handlerbars').last().find('img').attr('src','https://www.openmerchantaccount.com/img/jasdofiajoejaojg.png');
       }
     };
     $('img','.main').click(function(){
@@ -104,11 +104,11 @@ var popMovie = function(num) {
       showMovie($_this);
     });
     if (num === 1) {
-      $('.main').append('<div class=small-3 columns><img class=next src=http://i60.tinypic.com/1z5rm1u.png></div>');
+      $('.main').append('<div class=small-3 columns><img class=next src=cooltext1731650583.png></div>');
     } else if (num === totalPage) {
       $('.main').append('<div class=small-3 columns><img class=pre src=cooltext1731650795.png></div>');
     } else {
-      $('.main').append('<div class=small-3 columns><img class=next src=http://i60.tinypic.com/1z5rm1u.png><img class=pre src=cooltext1731650795.png></div>');
+      $('.main').append('<div class=small-3 columns><img class=next src=cooltext1731650583.png><img class=pre src=cooltext1731650795.png></div>');
     }
     $('.next').click(function(e){
       page++;
@@ -138,11 +138,11 @@ var topRate = function(num) {
       showMovie($_this);
     });
     if (num === 1) {
-      $('.main').append('<div class=small-3 columns><img class=next src=http://i60.tinypic.com/1z5rm1u.png></div>');
+      $('.main').append('<div class=small-3 columns><img class=next src=cooltext1731650583.png></div>');
     } else if (num === totalPage) {
       $('.main').append('<div class=small-3 columns><img class=pre src=cooltext1731650795.png></div>');
     } else {
-      $('.main').append('<div class=small-3 columns><img class=next src=http://i60.tinypic.com/1z5rm1u.png><img class=pre src=cooltext1731650795.png></div>');
+      $('.main').append('<div class=small-3 columns><img class=next src=cooltext1731650583.png><img class=pre src=cooltext1731650795.png></div>');
     }
     $('.next').click(function(e){
       page++;
@@ -172,11 +172,11 @@ var upComing = function(num) {
       showMovie($_this);
     });
     if (num === 1) {
-      $('.main').append('<div class=small-3 columns><img class=next src=http://i60.tinypic.com/1z5rm1u.png></div>');
+      $('.main').append('<div class=small-3 columns><img class=next src=cooltext1731650583.png></div>');
     } else if (num === totalPage) {
       $('.main').append('<div class=small-3 columns><img class=pre src=cooltext1731650795.png></div>');
     } else {
-      $('.main').append('<div class=small-3 columns><img class=next src=http://i60.tinypic.com/1z5rm1u.png><img class=pre src=cooltext1731650795.png></div>');
+      $('.main').append('<div class=small-3 columns><img class=next src=cooltext1731650583.png><img class=pre src=cooltext1731650795.png></div>');
     }
     $('.next').click(function(e){
       page++;
@@ -208,11 +208,11 @@ var actor = function(num) {
       showActor($_this);
     });
     if (num === 1) {
-      $('.main').append('<div class=small-3 columns><img class=next src=http://i60.tinypic.com/1z5rm1u.png></div>');
+      $('.main').append('<div class=small-3 columns><img class=next src=cooltext1731650583.png></div>');
     } else if (num === totalPage) {
       $('.main').append('<div class=small-3 columns><img class=pre src=cooltext1731650795.png></div>');
     } else {
-      $('.main').append('<div class=small-3 columns><img class=next src=http://i60.tinypic.com/1z5rm1u.png><img class=pre src=cooltext1731650795.png></div>');
+      $('.main').append('<div class=small-3 columns><img class=next src=cooltext1731650583.png><img class=pre src=cooltext1731650795.png></div>');
     }
     $('.next').click(function(e){
       page++;
@@ -242,6 +242,8 @@ $(document).on('search',function(){
       showMovie(_this);
     });
   });
+  // $('.input').val("Find Movies");
+  // $('.input').css('color','grey');
 });
 
 $(document).ready(function(){
@@ -251,12 +253,22 @@ $(document).ready(function(){
   });
   start(1);
   $('.main').prepend('<h3>New Movies</h3>');
+  // $('.input').click(function() {
+  //   if ($('.input').val() === 'Find Movies') {
+  //     $('.input').val("");
+  //     $('.input').css('color','black');
+  //   }   
+  // });
   $('.input').keypress(function(e){
     var key = e.which;
     if (key === 13) {
       $(document).trigger('search');
     }
   });
+  // $('.input').focusout(function(e){
+  //   $('.input').val("Find Movies");
+  //   $('.input').css('color','grey');
+  // });
   $('.movie-list').hover(function(){
     $('ul','.movie-list').show();      
   });
